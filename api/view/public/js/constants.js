@@ -1,0 +1,1 @@
+const BASE_URL = '_URL_';//cuando suba los cambios a la web, reemplazarlo por '/' ** /siame

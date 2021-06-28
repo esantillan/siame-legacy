@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>S.I.A.M.E </title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- w3css framework-->
+        <link rel="stylesheet" href="http://localhost/siame/api/view/public/css/w3.css">
+        <!-- icons(font-awesome) -->
+        <link rel="stylesheet" href="http://localhost/siame/api/view/public/css/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+        <!-- theme -->
+        <link rel="stylesheet" href="http://localhost/siame/api/view/public/css/theme/w3-colors-safety.css">
+        <!-- favicon -->
+        <link rel="shortcut icon" href="http://localhost/siame/api/view/public/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="http://localhost/siame/api/view/public/img/favicon.ico" type="image/x-icon">
+        <!-- styles -->
+        <link rel="stylesheet" href="http://localhost/siame/api/view/public/css/styles/general.css">
+
+    </head>
+    <body>
+        <!-- MODAL_LOADER -->
+        <div id="modal" class="w3-modal w3-center">
+            <span id="loader" class="fa fa-spinner fa-spin fa-3x fa-fw"></span>
+            <!-- End MODAL_LOADER -->
+        </div>
+        <!-- Navbar -->
+        <header class="w3-top">
+            <section class="w3-bar w3-safety-blue w3-left-align"><!-- @FIXME  -->
+                <a href="#" id="open_nav" class="w3-bar-item w3-button w3-padding-large w3-ripple">
+                    <img id="sidebar_icon" src="http://localhost/siame/api/view/public/img/logo.png" class="w3-circle w3-image w3-white">
+                </a>
+                <section class="w3-dropdown-click w3-right w3-ripple">
+                    <a id="my_account" href="#" class="w3-button w3-padding-large w3-ripple w3-hover-dark-gray" title="Mi Cuenta" onclick="dropdown('user_menu')">
+                        <i class="fa fa-user-circle"></i>
+                    </a>
+                    <div id="user_menu" class="w3-dropdown-content w3-bar-block w3-border w3-col s6 m6 l2">
+                        <a id='inicio' href="http://localhost/siame/inicio" class="w3-bar-item w3-button w3-hover-red user_menu_item w3-ripple"><i class="fa fa-home w3-margin-right" aria-hidden="true"></i>Inicio</a>
+
+                    </div>
+                </section>
+            </section>
+            <!-- SIDEBAR -->
+            <nav class="w3-sidebar w3-bar-block w3-card-2 w3-safety-blue w3-animate-left s6 m2" style="display:none" id="sidebar"><ul><div><button class="w3-button w3-block w3-left-align w3-ripple navbar_button sidebar_mod" onclick="accordion('direccion_mod')"><i class="fa fa-globe"></i>&nbsp;&nbsp;&nbsp;Direccion</button><div id="direccion_mod" class="w3-hide"><div class="w3-border-bottom"><button class="w3-button w3-block w3-left-align w3-ripple navbar_button sidebar_crud" onclick="accordion('provincia_crud')"><i class="w3-small fa fa-caret-down"></i>&nbsp;&nbsp;&nbsp;Provincia</button><div id="provincia_crud" class="w3-hide"><div class="w3-border-bottom w3-border-light-gray"><a href="http://localhost/siame/provincia" class="w3-bar-item w3-button sidebar_list_item w3-ripple sidebar_op"><i class="fa fa-caret-right  w3-small" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;ABM</a></div></div></div><div class="w3-border-bottom"><button class="w3-button w3-block w3-left-align w3-ripple navbar_button sidebar_crud" onclick="accordion('departamento_crud')"><i class="w3-small fa fa-caret-down"></i>&nbsp;&nbsp;&nbsp;Departamento</button><div id="departamento_crud" class="w3-hide"><div class="w3-border-bottom w3-border-light-gray"><a href="http://localhost/siame/departamento" class="w3-bar-item w3-button sidebar_list_item w3-ripple sidebar_op"><i class="fa fa-caret-right  w3-small" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;ABM</a></div></div></div><div class="w3-border-bottom"><button class="w3-button w3-block w3-left-align w3-ripple navbar_button sidebar_crud" onclick="accordion('localidad_crud')"><i class="w3-small fa fa-caret-down"></i>&nbsp;&nbsp;&nbsp;Localidad</button><div id="localidad_crud" class="w3-hide"><div class="w3-border-bottom w3-border-light-gray"><a href="http://localhost/siame/localidad" class="w3-bar-item w3-button sidebar_list_item w3-ripple sidebar_op"><i class="fa fa-caret-right  w3-small" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;ABM</a></div></div></div></div></div><div><button class="w3-button w3-block w3-left-align w3-ripple navbar_button sidebar_mod" onclick="accordion('usuarios_mod')"><i class="fa fa-users"></i>&nbsp;&nbsp;&nbsp;Usuarios</button><div id="usuarios_mod" class="w3-hide"><div class="w3-border-bottom"><button class="w3-button w3-block w3-left-align w3-ripple navbar_button sidebar_crud" onclick="accordion('usuario_crud_crud')"><i class="w3-small fa fa-caret-down"></i>&nbsp;&nbsp;&nbsp;Usuario</button><div id="usuario_crud_crud" class="w3-hide"><div class="w3-border-bottom w3-border-light-gray"><a href="http://localhost/siame/usuario" class="w3-bar-item w3-button sidebar_list_item w3-ripple sidebar_op"><i class="fa fa-caret-right  w3-small" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;ABM</a></div><div class="w3-border-bottom w3-border-light-gray"><a href="http://localhost/siame/usuario/mi_perfil" class="w3-bar-item w3-button sidebar_list_item w3-ripple sidebar_op"><i class="fa fa-caret-right  w3-small" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Mi Perfil</a></div></div></div></div></div><div><button class="w3-button w3-block w3-left-align w3-ripple navbar_button sidebar_mod" onclick="accordion('institucional_mod')"><i class="fa fa-university"></i>&nbsp;&nbsp;&nbsp;Institucional</button><div id="institucional_mod" class="w3-hide"><div class="w3-border-bottom"><button class="w3-button w3-block w3-left-align w3-ripple navbar_button sidebar_crud" onclick="accordion('plan_estudio_crud')"><i class="w3-small fa fa-caret-down"></i>&nbsp;&nbsp;&nbsp;Plan de Estudio</button><div id="plan_estudio_crud" class="w3-hide"><div class="w3-border-bottom w3-border-light-gray"><a href="http://localhost/siame/plan_estudio" class="w3-bar-item w3-button sidebar_list_item w3-ripple sidebar_op"><i class="fa fa-caret-right  w3-small" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;ABM</a></div><div class="w3-border-bottom w3-border-light-gray"><a href="http://localhost/siame/usuario/mi_perfil" class="w3-bar-item w3-button sidebar_list_item w3-ripple sidebar_op"><i class="fa fa-caret-right  w3-small" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Cargar Materias</a></div></div></div></div></div></ul></nav>
+            <!-- End SIDEBAR -->
+            <!-- End NAVBAR -->
+        </header>
+        <!-- Page Container -->
+        <section class="w3-container">  
+            <article id="main" class="w3-container w3-card-2 w3-white w3-round">
+                <!-- "Bread Crumbs" (migas de pan) -->
+
+                <!-- Área de Notificación -->
+                <section id="console" class="hide w3-panel w3-display-container  w3-red">
+                    <span id="close_console" class="w3-button w3-display-topright w3-red w3-ripple">&times;</span>
+                    <p id="console_info" class="w3-label w3-text-white"></p>
+                </section> 
+                <div class="w3-row w3-margin-top w3-margin-bottom">
+                    <div class="w3-panel w3-leftbar w3-red">
+                        <p class="w3-large w3-serif">
+                            No posee permisos para acceder a esta sección.</br>
+                            <u>Si cree que es un error</u>, por favor envíe un correo a <u class="w3-large w3-text-dark-gray">siame.belgrano@gmail.com</u> comentando la situaci&oacute;n.</br>
+                            Lamentamos la situaci&oacute;n.</p>
+                    </div>
+                    <img src="/siame/api/view/public/img/403.jpg" alt="Acceso Denegado" class="w3-col m12 w3-hover-grayscale">
+                </div>
+            </article>
+        </section>
+        <!-- Footer -->
+        <footer class="w3-container w3-bar w3-safety-blue">
+            <!--<h5>-->
+            <p  class="w3-small"><a href="#">S.I.A.M.E</a></p>
+            <!--</h5> @FIXME -->
+        </footer> 
+        <script type="text/javascript" src="http://localhost/siame/api/view/public/plugins/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript">const BASE_URL = 'http://localhost/siame/';//cuando suba los cambios a la web, reemplazarlo por '/' ** /siame</script>
+
+        <script type="text/javascript" src="http://localhost/siame/api/view/public/js/general.js"></script>
+
+
+    </body>
+</html>

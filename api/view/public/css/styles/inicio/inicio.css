@@ -1,0 +1,53 @@
+hr{
+    margin: 0;
+    paddin: 0;
+}
+.introjs-bullets ,.introjs-bullets > ul > li{
+    background-color: white !important;
+}
+.w3-dropdown-content > a{
+    background: #FFFFFF;
+}
+#contenedor_inicio  .w3-dropdown-content > a:hover{
+    font-weight: bold;
+    border:1px solid #ccc!important;
+    color: white !important;
+    background: #408DBD !important;
+}
+.dashboard > .w3-dropdown-click{
+    margin-top: 0.25em;
+}
+.w3-dropdown-click > button{
+    color: white;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+.w3-dropdown-click > button:hover{
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+.fa-map{
+    color: lightgrey;
+}
+.fa-map-marker{
+    color: #CC3300;
+}
+#tutorial{
+    /*background: black !important;*/
+    z-index: 0 !important;
+}
+#tutorial:hover{
+    background: #F44336 !important;
+    color: white !important;
+    font-weight: bold;
+}
+.w3-dropdown-content{
+    z-index: 5;
+}
+.fa-users{
+    color:#333333;
+}
+.dashboard  .w3-dropdown-click, #contenedor_inicio  button, #tutorial{
+    border-radius: 2px !important;
+}

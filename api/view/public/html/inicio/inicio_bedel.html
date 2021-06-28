@@ -1,0 +1,33 @@
+<section id="contenedor_inicio" class="w3-margin-top" data-step="1" data-intro="Bienvenido al &quot;<b>Sistema de Inscripci&oacute;n de Alumnos a Mesas de Ex&aacute;menes</b>&quot;">
+    <article class="w3-row introjs-showElement introjs-relativePosition">
+        <a id="tutorial" class="w3-button w3-red s1 w3-hover-shadow" href="javascript:void(0);" onclick="javascript:introJs().setOption('overlayOpacity',1).start();"><i class="fa fa-film" aria-hidden="true">&nbsp;</i>Ver Tutorial</a>
+    </article>
+    <article class="w3-row w3-margin-top w3-margin-bottom dashboard">
+        <div class="w3-dropdown-click">
+            <button onclick="dropdown('provincia_dropdown')" class="w3-button w3-margin-0 s1 blue-azure" data-step="2" data-intro="Aquí encontrar&aacute;s un listado de <u>Provincias</u> y podrás:<br><ul><li>Realizar Altas,</li><li>Bajas,</li><li>Modificaciones,</li><li> y Habilitar registros dados de baja</li></ul><p>Tambi&eacute;n podr&aacute;s realizar b&uacute;squedas y aplicar filtros.</p><p>Opcionalmente podr&aacute;s exportar esos datos a diferentes tipos de archivos como <small>PDF</small> y <small>Excel</small>.</p>"><i class="fa fa-globe">&nbsp;</i>Provincia</button>
+            <div id="provincia_dropdown" class="w3-dropdown-content w3-bar-block w3-card-2">
+                <a href="provincia" class="w3-bar-item w3-button">ABM</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-click">
+            <button onclick="dropdown('departamento_dropdown')" class="w3-button w3-margin-0 s1 blue-azure" data-step="3" data-intro="Aquí encontrar&aacute;s un listado de <u>Provincias</u> y podrás:<br><ul><li>Realizar Altas,</li><li>Bajas,</li><li>Modificaciones,</li><li> y Habilitar registros dados de baja</li></ul><p>Tambi&eacute;n podr&aacute;s realizar b&uacute;squedas y aplicar filtros.</p><p>Opcionalmente podr&aacute;s exportar esos datos a diferentes tipos de archivos como <small>PDF</small> y <small>Excel</small>.</p>"><i class="fa fa-map">&nbsp;</i>Departamento</button>
+            <div id="departamento_dropdown" class="w3-dropdown-content w3-bar-block w3-card-2">
+                <a href="departamento" class="w3-bar-item w3-button">ABM</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-click">
+            <button onclick="dropdown('localidad_dropdown')" class="w3-button w3-margin-0 s1 blue-azure" data-step="4" data-intro="Aquí encontrar&aacute;s un listado de <u>Provincias</u> y podrás:<br><ul><li>Realizar Altas,</li><li>Bajas,</li><li>Modificaciones,</li><li> y Habilitar registros dados de baja</li></ul><p>Tambi&eacute;n podr&aacute;s realizar b&uacute;squedas y aplicar filtros.</p><p>Opcionalmente podr&aacute;s exportar esos datos a diferentes tipos de archivos como <small>PDF</small> y <small>Excel</small>.</p>"><i class="fa fa-map-marker">&nbsp;</i>Localidad</button>
+            <div id="localidad_dropdown" class="w3-dropdown-content w3-bar-block w3-card-2">
+                <a href="localidad" class="w3-bar-item w3-button">ABM</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-click">
+            <button onclick="dropdown('usuario_dropdown')" class="w3-button w3-margin-0 s1 blue-azure" data-step="5" data-intro="Aquí encontrar&aacute;s un listado de <u>Provincias</u> y podrás:<br><ul><li>Realizar Altas,</li><li>Bajas,</li><li>Modificaciones,</li><li> y Habilitar registros dados de baja</li></ul><p>Tambi&eacute;n podr&aacute;s realizar b&uacute;squedas y aplicar filtros.</p><p>Opcionalmente podr&aacute;s exportar esos datos a diferentes tipos de archivos como <small>PDF</small> y <small>Excel</small>.</p>"><i class="fa fa-users">&nbsp;</i>Usuarios</button>
+            <div id="usuario_dropdown" class="w3-dropdown-content w3-bar-block w3-card-2">
+                <a href="usuario" class="w3-bar-item w3-button">ABM</a>
+                <hr>
+                <a href="usuario/mi_perfil" class="w3-bar-item w3-button">Mi Perfil de Usuario</a>
+            </div>
+        </div>
+    </article>
+</section>

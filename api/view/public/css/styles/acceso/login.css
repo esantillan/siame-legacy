@@ -1,0 +1,8 @@
+#submit:hover{
+    background: #0067A7 !important;
+    color: white !important;
+    font-weight: bold;
+}
+#forgot_password:hover{
+    color: #408DBD !important;
+}

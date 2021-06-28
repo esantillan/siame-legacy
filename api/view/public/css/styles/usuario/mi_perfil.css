@@ -1,0 +1,70 @@
+@media (min-width:601px){
+    .margen_derecho{
+        margin-right: 8.33333%;
+    }
+}
+#input_fecha_nacimiento{
+    width: 90% !important;
+    display: inline-block;
+}
+.ui-datepicker-trigger{
+    display: inline-block;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 10% !important;
+    border-radius: 2px !important;
+    color: #CCCCCC !important;
+    background-color: #408DBD !important;
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+}
+.ui-datepicker-trigger:hover{
+    background: #0067A7 !important;
+    color: #FFFFFF !important;
+}
+/*Quito los bordes redondeados a los select2 y arreglo el alto*/
+.select2-selection{
+    border-radius: 0 !important;
+    border-color: #ccc !important;
+    height: 100% !important;
+}
+.select2-container{
+    width: 100% !important;
+    height: 2.4em !important;
+}
+.select2-results__option{
+    background: white !important;
+    color: #000 !important;
+}
+.select2-results__option:hover{
+    background: #408DBD !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+#submit{
+    background: #ff8607 !important;
+    border-radius: 2px !important;
+    color: #F3F3F3 !important;
+    font-weight: bold;
+}
+#submit:hover{
+    color: white !important;
+}
+#contenedor_usuario > header > h2{
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: inherit;
+    color:#004b8d;
+}
+.fa-floppy-o{
+    color: #333 !important;
+}
+#volver{
+    border-radius: 2px !important;
+    background-color: #408DBD !important;
+    color: #EFEFEF !important;
+}
+#volver:hover{
+    background: #0067A7 !important;
+    color: #FFFFFF !important;
+}

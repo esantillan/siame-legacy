@@ -1,0 +1,76 @@
+<section id="contenedor_usuario" class="w3-margin-top w3-margin-bottom w3-text-black">
+    <header class="w3-row w3-container">
+        <h2>Mis Datos de Usuario</h2>
+    </header>
+    <form name="form_usuario" id="form_usuario" class="w3-container w3-margin-bottom" method="post">
+        <div class="container w3-row">
+            <div class="w3-margin-top w3-col s12 m12 l5 margen_derecho">
+                <label for="input_apellido" class="w3-label w3-text-indigo"><b>Apellido</b></label>
+                <input id="input_apellido" class="w3-input" minlength="3" type="text" placeholder="Apellido" name="apellido" autocomplete="off" required>
+            </div>
+            <div class="w3-margin-top w3-col s12 m12 l6">
+                <label for="input_nombre" class="w3-label w3-text-indigo"><b>Nombre</b></label>
+                <input id="input_nombre" class="w3-input" minlength="3" type="text" placeholder="Nombre" name="nombre" autocomplete="off" required>
+            </div>
+            <div class="w3-margin-top w3-col s12 m12 l5 margen_derecho">
+                <label for="input_documento" class="w3-label w3-text-indigo"><b>Documento</b></label>
+                <input id="input_documento" class="w3-input" minlength="3" type="text" placeholder="Documento" name="documento" autocomplete="off" required data-inputmask="'mask': '9{1,9}','placeholder':'','clearMaskOnLostFocus': true ">
+            </div>
+            <div class="w3-margin-top w3-col s12 m12 l6">
+                <label for="input_fecha_nacimiento" class="w3-label w3-text-indigo w3-col s12"><b>Fecha de Nacimiento</b></label>
+                <input id="input_fecha_nacimiento" class="w3-input" type="text" placeholder="DD/MM/AAAA" name="fecha_nacimiento" data-inputmask="'alias': 'date','placeholder':'DD/MM/AAAA','clearMaskOnLostFocus': true " autocomplete="off" required>
+            </div>
+            <div class="w3-margin-top w3-col s12 m12 l5 margen_derecho">
+                <label for="input_username" class="w3-label w3-text-indigo"><b>Usuario</b></label>
+                <input id="input_username" class="w3-input" minlength="3" type="text" placeholder="Nombre de Usuario" name="user" autocomplete="off" required>
+            </div>
+            <div class="w3-margin-top w3-col s12 m12 l6">
+                <label for="input_pass" class="w3-label w3-text-indigo"><b>Contrase&ntilde;a</b></label>
+                <input id="input_pass" class="w3-input" minlength="3" type="password" placeholder="Ingrese su Contraseña" name="pass" autocomplete="off" required>
+            </div>
+            <div class="w3-margin-top w3-col s12 m12 l5 margen_derecho">
+                <label for="input_pass_repeat" class="w3-label w3-text-indigo"><b>Repita la contrase&ntilde;a</b></label>
+                <input id="input_pass_repeat" class="w3-input" minlength="3" type="password" placeholder="Repita por favor su contraseña" name="pass_repeat" autocomplete="off">
+            </div>
+            <div class="w3-margin-top w3-col s12 m12 l6">
+                <label for="input_telefono_fijo" class="w3-label w3-text-indigo"><b>Tel&eacute;fono Fijo</b></label>
+                <input id="input_telefono_fijo" class="w3-input" minlength="3" type="text" placeholder="Tel&eacute;fono Fijo" name="telefno_fijo" autocomplete="off">
+            </div>
+            <div class="w3-margin-top w3-col s12 m12 l5 margen_derecho">
+                <label for="input_telefono_movil" class="w3-label w3-text-indigo"><b>Tel&eacute;fono M&oacute;vil</b></label>
+                <input id="input_telefono_movil" class="w3-input" minlength="3" type="text" placeholder="Tel&eacute;fono M&oacute;vil" name="telefno_movil" data-inputmask="'mask': '9{10}','placeholder':'111-1111111','clearMaskOnLostFocus': true " autocomplete="off">
+            </div>
+            <div class="w3-margin-top w3-col s12 m12 l6">
+                <label for="input_calle" class="w3-label w3-text-indigo"><b>Calle</b></label>
+                <input id="input_calle" class="w3-input" minlength="3" type="text" placeholder="Calle" name="calle" autocomplete="off" required>
+            </div>
+            <div class="w3-margin-top w3-col s12 m12 l5 margen_derecho">
+                <label for="input_numero" class="w3-label w3-text-indigo"><b>N&uacute;mero</b></label>
+                <input id="input_numero" class="w3-input" minlength="3" type="text" placeholder="N&uacute;mero" name="numero" autocomplete="off">
+            </div>
+            <div class="w3-margin-top w3-col s12 m12 l6">
+                <label for="input_email" class="w3-label w3-text-indigo"><b>E-Mail</b></label>
+                <input id="input_email" class="w3-input" minlength="3" type="text" placeholder="E-Mail" name="email" autocomplete="off" required>
+            </div>
+            <div class="w3-margin-top w3-col s12 m12 l5 margen_derecho">
+                <label for="provincia_select" class="w3-label w3-text-indigo"><b>Provincia</b></label>
+                <select id="provincia_select">
+                </select> 
+            </div>
+            <div class="w3-margin-top w3-col s12 m12 l6">
+                <label for="departamento_select" class="w3-label w3-text-indigo"><b>Departamento</b></label>
+                <select id="departamento_select">
+                </select> 
+            </div>
+            <div class="w3-margin-top w3-col s12 m12 l5 margen_derecho">
+                <label for="localidad_select" class="w3-label w3-text-indigo"><b>Localidad</b></label>
+                <select id="localidad_select">
+                </select> 
+            </div>
+        </div>
+        <div class="w3-row w3-margin-top w3-right">
+            <button id="volver" form="form_usuario" class="w3-btn w3-ripple w3-text-white" type="button" title="Volver a Inicio"><i class="fa fa-undo" aria-hidden="true"></i> Volver</button>
+            <button id="submit" form="form_usuario" class="w3-btn w3-ripple w3-text-white" type="submit" title="Guardar Cambios"><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar</button>
+        </div>
+    </form>
+</section>

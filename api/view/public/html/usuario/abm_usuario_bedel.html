@@ -1,0 +1,108 @@
+<section id="contenedor_usuario" class="w3-margin-top w3-margin-bottom w3-text-black">
+    <article class="w3-row w3-margin-bottom" id="botonera">
+        <button id="recargar_tabla" class="w3-button w3-ripple w3-round-small" title="Recargar"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+        <button id="alta" class="w3-button w3-ripple blue-azure w3-round-small" title="Cargar una nuevo Usuario"><i class="fa fa-plus" aria-hidden="true">&nbsp;&nbsp;</i>Nuevo Usuario</button>
+        <button id="carga_continua" class="w3-button w3-ripple blue-azure w3-round-small" title="Cargar consecutivamente varios Usuarios"><i class="fa fa-plus-square" aria-hidden="true">&nbsp;&nbsp;</i>Carga Continua</button>
+    </article>
+    <article>
+        <table id="tabla_usuario" class="stripe hover row-border order-column compact">
+            <thead>
+                <tr role="row">
+                    <th class="ui-state-default" rowspan="1" colspan="1"><input class="datatable_filter_input" data-index="0" placeholder="Apellido" type="text" autocomplete="off"><p>Apellido</p></th>
+                    <th class="ui-state-default" rowspan="1" colspan="1"><input class="datatable_filter_input" data-index="1" placeholder="Nombre" type="text" autocomplete="off"><p>Nombre</p></th>
+                    <th class="ui-state-default" rowspan="1" colspan="1"><input class="datatable_filter_input" data-index="2" placeholder="Documento" type="text" autocomplete="off"><p>Documento</p></th>
+                    <th class="ui-state-default" rowspan="1" colspan="1"><input class="datatable_filter_input" data-index="3" placeholder="Fecha de Nacimiento" type="text" autocomplete="off"><p>Fecha de Nacimiento</p></th>
+                    <th class="ui-state-default" rowspan="1" colspan="1"><input class="datatable_filter_input" data-index="4" placeholder="Nombre de Usuario" type="text" autocomplete="off"><p>Usuario</p></th>
+                    <th class="ui-state-default" rowspan="1" colspan="1"><input class="datatable_filter_input" data-index="5" placeholder="Tel&eacute;fono Fijo" type="text" autocomplete="off"><p>Tel&eacute;fono Fijo</p></th>
+                    <th class="ui-state-default" rowspan="1" colspan="1"><input class="datatable_filter_input" data-index="6" placeholder="Tel&eacute;fono M&oacute;vil" type="text" autocomplete="off"><p>Tel&eacute;fono M&oacute;vil</p></th>
+                    <th class="ui-state-default" rowspan="1" colspan="1"><p>Direcci&oacute;n_ID</p></th>
+                    <th class="ui-state-default" rowspan="1" colspan="1"><input class="datatable_filter_input" data-index="8" placeholder="Direcci&oacute;n" type="text" autocomplete="off"><p>Direcci&oacute;n</p></th>
+                    <th class="ui-state-default" rowspan="1" colspan="1"><p>Rol_ID</p></th>
+                    <th class="ui-state-default" rowspan="1" colspan="1"><input class="datatable_filter_input" data-index="10" placeholder="Rol" type="text" autocomplete="off"><p>Rol</p></th>
+                    <th class="ui-state-default" rowspan="1" colspan="1"><input class="datatable_filter_input" data-index="11" placeholder="E-Mail" type="text" autocomplete="off"><p>E-Mail</p></th>
+                    <th class="ui-state-default" rowspan="1" colspan="1"><p class="add_margin"><br>Acciones</p></th>
+                </tr>
+            </thead>
+        </table>
+    </article>
+    <section id="modal_usuario" class="w3-modal">
+        <article class="w3-modal-content w3-animate-top w3-card-4">
+            <header id="modal_header" class="w3-container"> 
+                <span style="font-size: 1.5em" onclick="close_form_modal('modal_usuario')"
+                      id="close_modal" class="w3-button w3-safety-blue w3-display-topright">&times;</span>
+                <h2 id="form_title"></h2>
+            </header>
+            <form name="form_usuario" id="form_usuario" class="w3-container w3-margin-bottom" method="post">
+                <div class="container w3-row">
+                    <div class="w3-margin-top w3-col s12 m12 l5 margen_derecho">
+                        <label for="input_apellido" class="w3-label w3-text-indigo"><b>Apellido</b></label>
+                        <input id="input_apellido" class="w3-input" type="text" placeholder="Apellido" name="apellido" autocomplete="off">
+                    </div>
+                    <div class="w3-margin-top w3-col s12 m12 l6">
+                        <label for="input_nombre" class="w3-label w3-text-indigo"><b>Nombre</b></label>
+                        <input id="input_nombre" class="w3-input" type="text" placeholder="Nombre" name="nombre" autocomplete="off">
+                    </div>
+                    <div class="w3-margin-top w3-col s12 m12 l5 margen_derecho">
+                        <label for="input_documento" class="w3-label w3-text-indigo"><b>Documento</b></label>
+                        <input id="input_documento" class="w3-input" type="text" placeholder="Documento" name="documento" autocomplete="off">
+                    </div>
+                    <div class="w3-margin-top w3-col s12 m12 l6">
+                        <label for="input_fecha_nacimiento" class="w3-label w3-text-indigo w3-col s12"><b>Fecha de Nacimiento</b></label>
+                        <input id="input_fecha_nacimiento" class="w3-input" type="text" placeholder="DD/MM/AAAA" name="fecha_nacimiento" autocomplete="off">
+                    </div>
+                    <div class="w3-margin-top w3-col s12 m12 l5 margen_derecho">
+                        <label for="input_username" class="w3-label w3-text-indigo"><b>Usuario</b></label>
+                        <input id="input_username" class="w3-input" type="text" placeholder="Nombre de Usuario" name="user" autocomplete="off">
+                    </div>
+                    <div class="w3-margin-top w3-col s12 m12 l6">
+                        <label for="input_telefono_fijo" class="w3-label w3-text-indigo"><b>Tel&eacute;fono Fijo</b></label>
+                        <input id="input_telefono_fijo" class="w3-input" type="text" placeholder="Tel&eacute;fono Fijo" name="telefno_fijo" autocomplete="off">
+                    </div>
+                    <div class="w3-margin-top w3-col s12 m12 l5 margen_derecho">
+                        <label for="input_telefono_movil" class="w3-label w3-text-indigo"><b>Tel&eacute;fono M&oacute;vil</b></label>
+                        <input id="input_telefono_movil" class="w3-input" type="text" placeholder="Tel&eacute;fono M&oacute;vil" name="telefno_movil" autocomplete="off">
+                    </div>
+                    <div class="w3-margin-top w3-col s12 m12 l6">
+                        <label for="input_calle" class="w3-label w3-text-indigo"><b>Calle</b></label>
+                        <input id="input_calle" class="w3-input" type="text" placeholder="Calle" name="calle" autocomplete="off">
+                    </div>
+                    <div class="w3-margin-top w3-col s12 m12 l5 margen_derecho">
+                        <label for="input_numero" class="w3-label w3-text-indigo"><b>N&uacute;mero</b></label>
+                        <input id="input_numero" class="w3-input" type="text" placeholder="N&uacute;mero" name="numero" autocomplete="off">
+                    </div>
+                    <div class="w3-margin-top w3-col s12 m12 l6">
+                        <label for="input_email" class="w3-label w3-text-indigo"><b>E-Mail</b></label>
+                        <input id="input_email" class="w3-input" type="text" placeholder="E-Mail" name="email" autocomplete="off">
+                    </div>
+                    <div class="w3-margin-top w3-col s12 m12 l5 margen_derecho">
+                        <label for="provincia_select" class="w3-label w3-text-indigo"><b>Provincia</b></label>
+                        <select id="provincia_select">
+                        </select> 
+                    </div>
+                    <div class="w3-margin-top w3-col s12 m12 l6">
+                        <label for="departamento_select" class="w3-label w3-text-indigo"><b>Departamento</b></label>
+                        <select id="departamento_select">
+                        </select> 
+                    </div>
+                    <div class="w3-margin-top w3-col s12 m12 l5 margen_derecho">
+                        <label for="localidad_select" class="w3-label w3-text-indigo"><b>Localidad</b></label>
+                        <select id="localidad_select">
+                        </select> 
+                    </div>
+                    <div class="w3-margin-top w3-col s12 m12 l6">
+                        <label for="rol_select" class="w3-label w3-text-indigo"><b>Rol</b></label>
+                        <select id="rol_select">
+                        </select> 
+                    </div>
+                    <div id="form_console" class="w3-col s12 w3-panel w3-display-container w3-red hide">
+                        <span id="close_form_console" class="w3-button w3-display-topright w3-red w3-ripple">&times;</span>
+                        <p id="form_console_info" class="w3-label w3-text-white"></p>
+                    </div>
+                </div>
+            </form>
+            <footer class="w3-container w3-safety-blue w3-margin-top w3-padding">
+                <button id="submit" form="form_usuario" class="w3-btn w3-ripple w3-right w3-text-white" type="submit"></button>
+            </footer>
+        </article>
+    </section>
+</section>

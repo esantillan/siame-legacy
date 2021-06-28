@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>S.I.A.M.E _TITLE_</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- w3css framework-->
+        <link rel="stylesheet" href="_W3CSS_">
+        <!-- icons(font-awesome) -->
+        <link rel="stylesheet" href="_FONT-AWESOME_">
+        <!-- theme -->
+        <link rel="stylesheet" href="_CSS_THEME_">
+        <!-- favicon -->
+        <link rel="shortcut icon" href="_FAVICON_" type="image/x-icon">
+        <link rel="icon" href="_FAVICON_" type="image/x-icon">
+        <!-- styles -->
+        <link rel="stylesheet" href="_GENERAL_STYLE_">
+        _CSS_TEMPLATES_
+    </head>
+    <body>
+        <!-- MODAL_LOADER -->
+        <div id="modal" class="w3-modal w3-center">
+            <span id="loader" class="fa fa-spinner fa-spin fa-3x fa-fw"></span>
+            <!-- End MODAL_LOADER -->
+        </div>
+        <!-- Navbar -->
+        <header class="w3-top">
+            <section class="w3-bar w3-safety-blue w3-left-align"><!-- @FIXME  -->
+                <a href="#" id="open_nav" class="w3-bar-item w3-button w3-padding-large w3-ripple">
+                    <img id="sidebar_icon" src="_ICON_" class="w3-circle w3-image w3-white">
+                </a>
+                <section class="w3-dropdown-click w3-right w3-ripple">
+                    <a id="my_account" href="#" class="w3-button w3-padding-large w3-ripple w3-hover-dark-gray" title="Mi Cuenta" onclick="dropdown('user_menu')">
+                        <i class="fa fa-user-circle"></i>
+                    </a>
+                    <div id="user_menu" class="w3-dropdown-content w3-bar-block w3-border w3-col s6 m6 l2">
+                        _NAVBAR_ITEMS_
+                    </div>
+                </section>
+            </section>
+            <!-- SIDEBAR -->
+            _SIDEBAR_ITEMS_
+            <!-- End SIDEBAR -->
+            <!-- End NAVBAR -->
+        </header>
+        <!-- Page Container -->
+        <section class="w3-container">  
+            <article id="main" class="w3-container w3-card-2 w3-white w3-round">
+                <!-- "Bread Crumbs" (migas de pan) -->
+                _BREADCRUMB_
+                <!-- Área de Notificación -->
+                <section id="console" class="hide w3-panel w3-display-container  w3-red">
+                    <span id="close_console" class="w3-button w3-display-topright w3-red w3-ripple">&times;</span>
+                    <p id="console_info" class="w3-label w3-text-white"></p>
+                </section> 
+                _TEMPLATE_
+            </article>
+        </section>
+        <!-- Footer -->
+        <footer class="w3-container w3-bar w3-safety-blue">
+            <!--<h5>-->
+            <p  class="w3-small"><a href="#">S.I.A.M.E</a></p>
+            <!--</h5> @FIXME -->
+        </footer> 
+        <script type="text/javascript" src="_JQUERY_"></script>
+        <script type="text/javascript">_CONSTANTS_JS_</script>
+        _OTHER_CONSTANTS_
+        <script type="text/javascript" src="_GENERAL_SCRIPT_"></script>
+        _PLUGINS_
+        _SCRIPT_TEMPLATES_
+    </body>
+</html>

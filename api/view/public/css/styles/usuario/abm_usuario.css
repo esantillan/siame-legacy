@@ -1,0 +1,35 @@
+@media (min-width:601px){
+    .margen_derecho{
+        margin-right: 8.33333%;
+    }
+}
+#input_fecha_nacimiento{
+    width: 90% !important;
+    display: inline-block;
+}
+.ui-datepicker-trigger{
+    display: inline-block;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 10% !important;
+    border-radius: 2px !important;
+    color: #CCCCCC !important;
+    background-color: #408DBD !important;
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+}
+.ui-datepicker-trigger:hover{
+    background: #0067A7 !important;
+    color: #FFFFFF !important;
+}
+.fa-key{
+    border-radius: 100%;
+    background: #616161;
+    color: orange;
+    padding: 1px;
+    font-size: 23px;
+    margin-left: 5px;
+}
+.fa-key:hover{
+    color: #f6c700;
+}

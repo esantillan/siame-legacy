@@ -1,0 +1,35 @@
+que los chicos pueden inscribirse previamente desde su casa
+5no tener que volver a pasar los datos de los chicos
+unicamente corroborar los datos
+deberíamos hacercarnos únicamente a ver si la materia está regular
+el sistema tiene que generar el acta volante
+poder darse de baja
+que el sistema permita inscribirse y borrarse desde la casa
+poder ingresar con el dni y que nos de todos los datos(por ejemplo, la cooperadora, el permiso de examen)
+
+si tiene la cooperadora paga, que no haga falta la confirmacion(que muestre solo el troquel),caso contrario deberá pasar por bedelia y abonar el permiso de examen para que se confirme el permiso de examen
+
+el sistema deberá pedir una clave personal para los bedeles(DNI, o lo que sea-debería estar encryptada)
+
+coordinador/a de sede es otro actor(es el que hace las estadísticas:
+
+-cuantos chicos rinden en el turno(measa de noviembre...segunda de diciembre.....etc)
+-cantidad de aprobados por materia
+-materia con más cantidad de desaprobados
+
+
+
+mesas especiales:
+
+las acreditaciones van a parte(en la sede administratuva de la sede central)
+alumnos de 3ero o que hallan terminado
+
+
+alumno debería tener tel.mail...
+
+los chicos puedan fijar(con su dni) su historial académico.
+
+los profesores puedan ver la característica "APROBADO/DESAPROBADO" al terminar (en el caso de que la nota no se hallan cargado todavía, que el sistema muestre si aprobó o no)  
+
+debe haber un día y un horario que el sistema "CORTE"las inscripciones y las bajas a las mesas
+debe guardar cambios y cerrar la sesion del bedel(transcurrido una hora)

@@ -1,0 +1,53 @@
+<section id="contenedor_localidad" class="w3-margin-top w3-margin-bottom w3-text-black">
+    <article class="w3-row w3-margin-bottom" id="botonera">
+        <button id="recargar_tabla" class="w3-button w3-ripple" title="Recargar"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+        <button id="alta" class="w3-button w3-ripple blue-azure" title="Cargar una nueva Localidad"><i class="fa fa-plus" aria-hidden="true">&nbsp;&nbsp;</i>Nueva Localidad</button>
+        <button id="carga_continua" class="w3-button w3-ripple blue-azure" title="Cargar consecutivamente varias Localidades"><i class="fa fa-plus-square" aria-hidden="true">&nbsp;&nbsp;</i>Carga Continua</button>
+    </article>
+    <article>
+        <table id="tabla_localidad" class="stripe row-border hover order-column compact">
+            <thead>
+                <tr role="row">
+                <th class="ui-state-default" rowspan="1" colspan="1"><input class="datatable_filter_input" data-index="0" placeholder="Nombre" type="text" autocomplete="off"><p>Nombre</p></th>
+                <th class="ui-state-default" rowspan="1" colspan="1"><input class="datatable_filter_input" data-index="1" placeholder="Departamento" type="text" autocomplete="off"><p>Departamento</p></th>
+                <th class="ui-state-default" rowspan="1" colspan="1"><p>Departamento_ID</p></th>
+                <th class="ui-state-default" rowspan="1" colspan="1"><p class="add_margin"><br>Acciones</p></th>
+            </tr>
+            </thead>
+        </table>
+    </article>
+    <section id="modal_localidad" class="w3-modal">
+        <article class="w3-modal-content w3-animate-top w3-card-4" >
+            <header id="modal_header" class="w3-container"> 
+                <span style="font-size: 1.5em" onclick="close_form_modal('modal_localidad')"
+                      id="close_modal" class="w3-button w3-safety-blue w3-display-topright">&times;</span>
+                <h2 id="form_title"></h2>
+            </header>
+            <form name="form_localidad" id="form_localidad" name="form_localidad" class="w3-container" method="post">
+                <div class="container w3-row">
+                    <div class="w3-margin-top w3-col s12 w3-margin-right">
+                        <label for="input_nombre" class="w3-label w3-text-indigo"><b>Nombre</b></label>
+                        <input id="input_nombre" class="w3-input" type="text" placeholder="Localidad" name="nombre" autocomplete="off">
+                    </div>
+                    <div class="w3-margin-top w3-col s12 w3-margin-right">
+                        <label for="provincia_select" class="w3-select w3-label w3-text-indigo"><b>Provincia</b></label>
+                        <select id="provincia_select" name="provincia_select">
+                        </select> 
+                    </div>
+                    <div class="w3-margin-top w3-col s12 w3-margin-right">
+                        <label for="departamento_select" class="w3-select w3-label w3-text-indigo"><b>Departamento</b></label>
+                        <select id="departamento_select" name="departamento_select">
+                        </select> 
+                    </div>
+                    <div id="form_console" class="w3-col s12 w3-panel w3-display-container w3-red hide">
+                        <span id="close_form_console" class="w3-button w3-display-topright w3-red w3-ripple">&times;</span>
+                        <p id="form_console_info" class="w3-label w3-text-white">Cualquier cosa</p>
+                    </div>
+                </div>
+            </form>
+            <footer class="w3-container w3-safety-blue w3-padding">
+                <button id="submit" form="form_localidad" class="w3-btn w3-ripple w3-right w3-text-white" type="submit"></button>
+            </footer>
+        </article>
+    </section>
+</section>

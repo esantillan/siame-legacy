@@ -1,0 +1,210 @@
+.editar{
+    border-radius: 100%;
+    background: orangered;
+    color: white;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 22px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.eliminar{
+    border-radius: 100%;
+    background-color: red;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: white;
+    font-size: 23px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.eliminar:hover{
+    color: #333333;
+}
+.editar:hover{
+    color: #333333;
+    cursor:pointer;
+}
+.fa:hover{
+    cursor:pointer;
+}
+.habilitar{
+    border-radius: 100%;
+    margin-left: 5px;
+    margin-right: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 23px;
+    background-color: green;
+    color: white;
+}
+.datatable_filter_input{
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+.table_loader
+{
+    display: block !important;
+    height: 100%;
+    margin: 15%;
+}
+#table_loader{
+    color: orange;
+}
+.select2 option{
+    height: 2em !important;
+}
+/*
+Necesario para poder establecer el ancho de las columnas en datatable
+*/
+table{
+    margin: 0 auto;
+    width: 100%;
+    clear: both;
+    border-collapse: collapse;
+    table-layout: inherit;
+    word-wrap:break-word;
+}
+.datatable_filter_input{
+    border: 1px solid #dddddd;
+    border-radius: 1px;
+    background: #F9F9F9;
+    font-weight: normal;
+}
+input[type="search"]{
+    border: 1px solid #dddddd !important;
+    border-radius: 1px !important;
+    background: #FDFDFD !important;
+    font-weight: normal !important;
+}
+select{
+    width: 4em;
+    color:#000;
+    border: 1px solid #dddddd;
+    border-radius: 1px;
+}
+.fg-button, .ui-button{
+    background: white !important;
+    border-radius: 0 !important;   
+    color: #0067A7 !important;
+    margin-right: 5px !important;
+}
+.fg-button:hover, .ui-button:hover{
+    background: #4297d7 !important;  
+    color: white !important;
+    opacity: 1 !important;
+}
+.ui-state-disabled{
+    background: #ffffff !important;
+    color: #999999 !important;
+    opacity: 0.9 !important;
+}
+th,td{
+    white-space: nowrap;
+}
+#botonera > button{
+    margin: 0.15em;
+}
+form{
+    margin-bottom: 1em;
+}
+sup{
+    color: #66ff33;
+}
+/*tr:hover{
+    color: white;
+    background: #154889 !important;
+    font-weight: bold !important;
+    opacity:0.75;
+}*/
+.add_margin{
+    margin: 28px !important;
+}
+/*Quito los bordes redondeados a los select2 y arreglo el alto*/
+.select2-selection{
+    border-radius: 0 !important;
+    border-color: #ccc !important;
+    height: 100% !important;
+}
+.select2-container{
+    width: 100% !important;
+    height: 2.4em !important;
+}
+.select2-results__option{
+    background: white !important;
+    color: #000 !important;
+}
+.select2-results__option:hover{
+    background: #408DBD !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+/* Defino el placeholder del select (para esto debo agregar un <option> con value="")*/
+option[value=""][disabled] {
+    display: none;
+}
+#modal_header{
+    background: #0067A7;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.25em 0.25em 0 0;
+}
+#submit{
+    background: #ff8607 !important;
+    border-radius: 1px !important;
+}
+#botonera > button{
+    border-radius: 2px !important;
+}
+#submit:hover{
+    font-weight: bold;
+}
+#close_modal{
+    border-radius: 1px 0.2em 1px 1px !important;
+    border: none !important;
+}
+#close_modal:hover{
+    background: #CC3300 !important;
+    color: white !important;
+    font-weight: bod !important;
+}
+#recargar_tabla, #cargar{
+    color: #00cc00;
+    background-color: #408DBD;
+    font-weight: bold;
+}
+#recargar_tabla:hover, #cargar:hover{
+    background: #0067A7 !important;
+    color: #66ff33 !important;
+}
+.w3-modal > article{
+    border-radius: 0.25em;
+}
+.w3-modal-content > footer{
+    border-radius: 0 0 0.25em 0.25em;
+}
+#form_console{
+    font-weight: bold;
+    font-size: small;
+    font-family: Verdana;
+}
+#close_form_console:hover{
+    background: #000 !important;
+    font-weight: bold;
+    color: white !important;
+}
+.top_round{
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+}
+.bottom_round{
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+table{
+    width: 100%;
+}
+textarea{
+    resize:vertical;
+}

@@ -1,0 +1,163 @@
+html
+{
+    position: relative; 
+    min-height: 100%;
+}
+body
+{
+    /*    padding-top: 80px !important;
+        padding-bottom: 48px !important*/
+    /*padding: 0;*/
+    margin: 5em 0 5em ;/*65px;*/
+    background: #EEEEEE;
+}
+body > footer
+{
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    font: 'Open Sans';
+}
+nav{
+    font-size: 1.1em;
+}
+a:link   
+{   
+    text-decoration:none;   
+}
+footer > p > a{
+    font-size: 1.1em;
+}
+footer > p > a:hover{
+    font-weight: bold;
+}
+html,body,h1,h2,h3,h4,h5 {font-family: sans-serif}/*"Open Sans", sans-serif}*/
+/*@font-face{
+    font-family: 'Open Sans';
+    src: url(https://fonts.googleapis.com/css?family=Open+Sans);/*@FIXME
+    /*src: url(http://localhost/siame/api/view/public/css/font/OpenSans-Regular.ttf);
+}*/
+.navbar_button{
+    background: #408DBD;
+    color: white;
+}
+.navbar_button:focus{
+    font-weight: bold;
+}
+nav > ul{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+nav{
+    background: #408DBD !important;
+    color: white !important;
+}
+.show{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    -moz-transition: visibility 1s, opacity 0.2s , height 0.2s linear;
+    -webkit-transition: visibility 1s, opacity 0.2s, height 0.2s linear;
+    -ms-transition: visibility 1s, opacity 0.2s, height 0.2s linear;
+    transition: visibility 1s, opacity 0.2s, height 0.2s linear;
+}
+.hide{
+    margin: 0 !important;
+    padding: 0 !important;
+    visibility: hidden;
+    height: 0 !important;
+    opacity: 0;
+    -moz-transition: visibility 1s, opacity 0.2s, height 0.2s linear;
+    -webkit-transition: visibility 1s, opacity 0.2s, height 0.2s linear;
+    -ms-transition: visibility 1s, opacity 0.2s, height 0.2s linear;
+    transition: visibility 1s, opacity 0.2s, height 0.2s linear;
+}
+.sidebar_mod:hover{
+    font-weight: bold;
+    color: white !important;
+    background: #000 !important;
+}
+.sidebar_crud:hover{
+    font-weight: bold;
+    color: white !important;
+    background: #777777 !important;
+}
+.sidebar_op:hover{
+    font-weight: bold;
+    color: white !important;
+    background: #0067A7 !important;
+}
+#main{
+    margin-left: 0%;
+}
+#sidebar{
+    background: #408DBD;
+    height: 75%;
+    opacity:0.75;
+    z-index: 999999 !important;
+}
+#user_menu{
+    right:0;
+}
+#sidebar_icon{
+    height: 20px;
+    width: 20px;
+}
+#loader{
+    color: orange;
+    margin: 30%;
+}
+
+#console{
+    width: 100% !important;
+    font-weight: bold;
+    font-size: small;
+    font-family: Verdana;
+}
+nav{
+    padding: 0 !important;
+}
+#open_nav:hover{
+    background: #408DBD !important;
+}
+#my_account:hover{
+    background: #408DBD !important;
+}
+#close_console:hover{
+    background: #000 !important;
+    font-weight: bold;
+    color: white !important;
+}
+@media (max-width: 600px) {
+    #sidebar{
+        width: 50% !important;
+        height: 100%;
+    }
+}
+.blue-azure{
+    background: #408DBD;
+    color: white !important;
+}
+.blue-azure:hover{
+    background: #0067A7 !important;
+    color: white !important;
+}
+#breadcrumbs{
+    width: 100% !important;
+    text-align: right !important;
+    margin-bottom: 16px !important;
+    font-size: small;
+}
+#breadcrumbs{
+    margin-top: 3em !important;
+    margin-bottom: 0 !important;
+}
+#breadcrumbs,#breadcrumbs > li{
+    background: white !important;
+    color: #999 !important;
+    display: inline;
+}
+nav .fa{
+    color: #333333;
+}

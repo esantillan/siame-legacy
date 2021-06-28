@@ -1,0 +1,29 @@
+se pide una solicitud-debe presentarse con la libreta firmada(regularizada)
+se llenan los datos
+es una solicitud por materia(con datos de la materia y un recordatorio)
+consta de nombre alumno,dni,nombre profesor, año que curs, la materia que va a rendir, el año que la cursó
+esa nota se presenta ante el coordinador de sede
+se abona un arancel(si no se ha abonado la cooperadora)
+ese mismo papel vuelve a bedelía donde es separado por fecha y por materia:
+
+segun orden de mesas(y segun los años)
+para asignar la mesa se deben tener en cuenta la carga horaria del profesor para asignar la mesa(y que a su vez hallan dos prof más para formar el tribunal-coordinar a los profesores su disponibilidad)
+se hacen las actas volantes: es el listado de los que rinden cada materia(que lo tiene el prof)
+una vez que terminan de rendir, se vuelven a bedelía y se vuelca al libro de actas de examenes(son libros que van por tomos y foleados-historial académico de TODA LA CARRERA-cada libro tiene 200 actas)
+
+cada carilla es un folio
+
+libro de REGULARES,LIBRES y, LIBRO DE EQUIVALENCIAS
+
+
+
+para darse de baja:
+
+uno o dos días de inscripcion(con 48h de anticipacion) debe ser PERSONALMENTE(sino "mesa de castigo")
+el libro de actas de examen no se puede modificar(deben avalarlos el profesor y el tribunal-la secretaria debe visarlos)
+
+ cambio de resolucion:
+ solamente alumnos de 3er año (en que se aplique el cambio),ver correlatividades
+ para pasar a tercero deben tener aprobadas todas las materias de primero
+ mesas especiales MAYO(ACREDITABLES Y APROBACION);SEPTIEMBRE(SOLO APROBACION)(chicos que terminaron o estan en tercero)
+

@@ -1,0 +1,322 @@
+/*
+Theme Name: BlueGray
+Theme URI: http://www.guidovanderleest.nl/bluegray
+Version: 4.1
+Author: Guido van der Leest
+Author URI: http://www.guidovanderleest.nl
+Description: BlueGray is a free, clean, minimalistic, responsive, mobile friendly WordPress theme. Features: sidebar, widget areas on homepage, widget areas in footer, custom header image, custom background, custom logo to replace blogname and description, full width page template, dropdown navigation. Enjoy. 
+Tags: one-column, two-columns, right-sidebar, fixed-layout, responsive-layout, full-width-template, custom-background, custom-header, custom-menu, featured-images, blue, gray, editor-style, translation-ready
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: bluegray
+
+BlueGray, Copyright 2014, Guido van der Leest
+BlueGray is licensed under the GPL
+*/
+
+
+/* 
+RESET STYLESHEET 
+Source: http://meyerweb.com/eric/tools/css/reset
+Author: Eric Meyer
+Author URI: http://meyerweb.com/ 
+License: none (public domain) 
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-family:inherit;
+	font-size:100%;
+	font-style:inherit;
+	font-weight:inherit;
+	vertical-align:baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+	display:block;
+}
+
+body {
+	line-height:1;
+}
+
+ol, ul {
+	list-style:none;
+}
+
+blockquote, q {
+	quotes:none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content:'';
+	content:none;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+
+/* BODY AND CONTAINER */
+body {background:#eee; font-family:'Open Sans', sans-serif; font-size:1em; color:#333; line-height:1.5em; text-align:left; word-wrap:break-word;}
+#container {width:100%; float:left; margin:0 auto 0;}
+
+
+/* MAIN CONTENT AREA */
+#main-content {max-width:1160px; clear:both; position:relative; margin:0 auto 0; padding:0 20px 0;}
+#main-content:after {content:''; display:block; height:0; clear:both;}
+
+#content {width:66%; float:left; padding:20px 2% 20px 0;}
+#content-full {width:100%; float:left; padding:20px 0;}
+
+
+/* HEADINGS */
+h1 {font-size:2.25em; line-height:1.5em;}
+h2 {font-size:2.0em; line-height:2em;}
+h3 {font-size:1.75em; line-height:2em;}
+h4 {font-size:1.5em; line-height:2em;}
+h5 {font-size:1.25em; line-height:2.5em;}
+h6 {font-size:1.0em; line-height:2.5em;}
+
+
+/* LINKS AND HTML TAGS */
+a {text-decoration:none; color:#00aaff;}
+a:hover {text-decoration:underline;}
+
+strong, b {font-weight:bold;}
+small {font-size:0.75em;}
+big {font-size:1.25em;}
+sub {vertical-align:sub; font-size:0.9em;}
+sup {vertical-align:super; font-size:0.9em;}
+ins, mark {font-weight:bold; background:none; text-decoration:none; color:#00aaff;}
+cite, em, abbr, acronym {font-style:italic;}
+code, kbd, samp, var {font-family:monospace, monospace;}
+pre {margin:10px 0; padding:5px 10px; white-space:pre-wrap; border:1px solid #ddd;}
+blockquote, q {margin:10px 0; padding:0 0 0 20px; display:block; font-size:1.2em; line-height:1.5em; font-style:italic; border-left:2px solid #00aaff;}
+address {margin:10px 0; font-size:1.2em; line-height:1.5em; font-style:italic;}
+p {margin:0 0 10px;}
+
+
+/* TABLE AND LISTS */
+table {margin:10px 0; border-collapse:collapse;}
+table, th, td {border: 1px solid #ddd; padding:10px;}
+table th {font-weight:bold;}
+
+ul {list-style:square; margin:5px 0 5px 0;}
+ol {list-style:decimal; margin:5px 0 5px 0;}
+li {margin:0 0 0 20px;}
+dl {margin:10px 0;}
+dt {font-weight:bold;}
+dd {margin:0 0 0 20px;}
+
+
+/* INPUTS */
+input, select, textarea {-webkit-appearance:none; -moz-appearance:none; border:1px solid #ddd; padding:2px 5px; background:none; color:#333; font-size:1em; font-family:'Open Sans', sans-serif;}
+input[type="submit"], input[type="reset"], input[type="button"] {cursor:pointer; border:0; padding:2px 5px; background:#00aaff; color:#fff;}
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {background:#333;}
+input[type="checkbox"] {-webkit-appearance:checkbox; -moz-appearance:checkbox;}
+input[type="radio"] {-webkit-appearance:radio; -moz-appearance:radio;}
+select {max-width:100%; -webkit-appearance:menulist; -moz-appearance:menulist;}
+
+
+/* HEADER FIRST */
+#header-first {max-width:1160px; clear:both; position:relative; margin:0 auto 0; padding:0 20px; text-align:center;}
+#header-first:after {content:''; display:block; height:0; clear:both;}
+
+
+/* HEADER FIRST LOGO */
+#header-first .logo {width:100%; float:left; padding:10px 0;}
+#header-first .logo h1 a:hover {text-decoration:none; color:#333;}
+#header-first .logo h2 {padding:5px 0 0; font-size:1.5em; line-height:1.5em;}
+
+
+/* HEADER SECOND */
+#header-second {width:100%; float:left; text-align:center;}
+
+
+/* HEADER SECOND HOMEPAGE IMAGE */
+#header-second .header-img {width:100%; height:auto;}
+
+
+/* HEADER SECOND MENU */
+.nav-head {width:100%; clear:both; float:left; background:#333;}
+.nav-head select {display:none;}
+.nav-head ul {max-width:1160px; clear:both; position:relative; margin:0 auto 0; padding:0 20px 0; z-index:999; list-style:none;}
+.nav-head ul li {list-style-type:none; display:inline-block; position:relative; margin:0 10px;}
+.nav-head ul li a {text-decoration:none; color:#ddd; background:none; padding:10px 0; display:inline-block;}
+.nav-head ul li a:hover {text-decoration:underline;}
+.nav-head .current_page_item > a, .nav-head .current_page_parent > a {text-decoration:underline;}
+
+
+/* HEADER SECOND SUBMENU */
+.nav-head ul ul {display:none; position:absolute; top:100%; padding:0; text-align:left;}
+.nav-head ul ul ul {display:none; position:absolute; top:30%; left:100%;}
+.nav-head ul ul a {width:12em; padding:5px 10px; background:#00aaff; color:#fff;}
+.nav-head ul li:hover > ul {display:block;}
+.nav-head ul li ul li {margin:0;}
+
+
+/* HOMEPAGE WIDGET AREA */
+#header-widgets {width:100%; clear:both; float:left; border-bottom:2px solid #ddd;}
+
+.home-left {float:left; width:32%; margin:20px 0 0;}
+.home-middle {float:left; width:32%; margin:20px 2% 0;}
+.home-right {float:right; width:32%; margin:20px 0 0;}
+
+
+/* PAGE */
+.page-title {clear:both; padding:0 0 20px; line-height:1.5em;}
+.page-title-post {clear:both; line-height:1.5em;}
+.archive-description {display:block; font-style:italic;}
+.pagelink {clear:both; display:block; margin:20px 0 10px;}
+
+
+/* POST */
+.post-title {clear:both; line-height:1.5em;}
+.post-title a:hover {color:#333; text-decoration:none;}
+.sticky {clear:both; display:block; text-align:center; color:#fff; background:#00aaff; margin:0 0 10px; padding:5px;}
+.postmetadata {clear:both; display:block; margin:20px 0; padding:5px 10px; border:1px solid #ddd;}
+.more {width:100%; clear:both; display:block; float:left; margin:20px 0; padding:0 0 20px; border-bottom:2px solid #ddd;}
+a.readmore {float:right; padding:2px 5px; background:#00aaff; color:#fff; text-decoration:none;}
+a.readmore:hover {background:#333; text-decoration:none;}
+
+
+/* POST NAV */
+.post-nav {width:100%; clear:both; float:left; display:block;}
+.nav-prev {float:left; padding:5px 0;}
+.nav-next {float:right; padding:5px 0;}
+
+
+/* EDIT LINK */
+.edit-link {clear:both; display:block; text-align:center; margin:10px 0; padding:5px; background:#f8f8f8; border:1px solid #ddd;}
+
+
+/* IMAGE AND VIDEO */
+embed, iframe, object, video {max-width:100%;}
+img {max-width:100%; height:auto;}
+
+img.alignright {float:right; margin:0.4em 0 0.4em 1em;}
+img.alignleft {float:left; margin:0.4em 1em 0.4em 0;}
+img.aligncenter {display:block; margin:0.4em auto 0.4em auto;}
+.alignright {float:right; margin:0.4em 0 0.4em 1em;}
+.alignleft {float:left; margin:0.4em 1em 0.4em 0;}
+.aligncenter {display:block; margin:0.4em auto 0.4em auto;}
+
+.wp-post-image, .single-image {float:left; margin:0.4em 1em 0.4em 0;}
+
+.wp-caption {max-width:100%;}
+.wp-caption-text {text-align:center;}
+
+.gallery img {border:0 !important;}
+.gallery dl, .gallery dt, .gallery dd {margin:0; padding:0;}
+.gallery-caption {max-width:100%; text-align:center;}
+
+
+/* SEARCHFORM */
+.search-form {padding:10px 0;}
+.search-field {width:50%; margin:0 5px 0 0;}
+.search-form .screen-reader-text {display:none;}
+
+
+/* COMMENTS */
+#comments {width:100%; clear:both; float:left;}
+.comment-list {background:#f8f8f8; border:1px solid #ddd; font-weight:normal; margin:20px 0; padding:0 20px 0 10px;}
+.comment-list ol {list-style:none;}
+.comment-list li {list-style:none; margin:0 0 0 10px;}
+.comment-body {border-left:2px solid #00aaff; padding:0 0 0 15px; margin:20px 0;}
+.comment-notes, .form-allowed-tags {font-size:0.75em; padding:5px 0;}
+.comments-title, .comment-reply-title, .no-comments {clear:both; font-size:1.5em;} 
+.comment-author .avatar {margin:0 5px 0 0;}
+.bypostauthor, .comment-awaiting-moderation {font-style:italic;}
+
+#respond {width:100%; clear:both;}
+.comment-form label {padding:0 0 5px; display:block;}
+.comment-form input, .comment-form textarea {width:80%;}
+.comment-form input[type="submit"] {width:auto;}
+
+
+/* COMMENT NAV */
+.comment-nav {width:100%; clear:both; float:left; display:block;}
+.comment-prev {float:left; padding:5px 0;}
+.comment-next {float:right; padding:5px 0;}
+
+
+/* SIDEBAR AND WIDGETS */
+#sidebar {width:32%; float:right; padding:20px 0 0;}
+.widget {padding:15px 5%; margin:0 0 20px; background:#f8f8f8; border:1px solid #ddd;}
+.widgettitle {margin:0 0 10px; padding:0 0 5px; color:#00aaff; border-bottom:2px solid #00aaff; font-size:1.5em; line-height:1.5em;}
+
+
+/* FOOTER */
+#footer {width:100%; float:left; background:#333; color:#ddd; margin:0 auto 0;}
+#footer a {color:#ddd;}
+#footer .site-info {max-width:1160px; clear:both; position:relative; margin:0 auto 0; padding:15px 20px; text-align:center;}
+
+
+/* FOOTER WIDGET AREA */
+#footer-widgets {max-width:1160px; clear:both; position:relative; margin:0 auto 0; padding:0 20px;}
+#footer-widgets:after {content:''; display:block; height:0; clear:both;}
+
+#footer .widget {padding:10px 0; margin:0 0 10px; background:none; border:none;}
+#footer .widgettitle {padding:0; color:#ddd; border:0;}
+
+.footer-left {float:left; width:32%; margin:20px 0 0;}
+.footer-middle {float:left; width:32%; margin:20px 2% 0;}
+.footer-right {float:right; width:32%; margin:20px 0 0;}
+
+
+/* FOOTER INPUTS */
+#footer input, #footer select, #footer textarea {color:#ddd;}
+#footer input[type="submit"], #footer input[type="reset"], #footer input[type="button"] {background:#ddd; color:#333;}
+#footer input[type="submit"]:hover, #footer input[type="reset"]:hover, #footer input[type="button"]:hover {background:#fff; color:#333;}
+
+
+/* MOBILE */
+@media screen and (max-width:767px) { 
+	/* BODY AND CONTAINER */
+	body {line-height:1.2em;}
+	body.custom-background {background-image:none !important;}
+	#container {width:98%; padding:0 1%;}
+
+	/* MAIN CONTENT AREA */
+	#main-content {width:100%; float:left; padding:0;}
+	#content, #content-full {width:100%; padding:10px 0;}
+
+	/* HEADER */
+	#header-first {width:100%; float:left; padding:0;}
+	#header-first .logo h1 {font-size:2em;}
+	#header-first .logo h2 {padding:0; font-size:1.5em;}
+	#header-widgets {border:0; margin:10px 0 0;}
+	.home-right, .home-middle, .home-left {width:100%; margin:0; float:left;} 
+
+	/* MENU */
+	.nav-head ul {display:none;} 
+	.nav-head {margin:0 0 10px;}
+	.nav-head select {display:block; width:100%; height:35px; margin:0 auto 0; font-size:1em; line-height:1.2em; color:#fff; background:#333; border:0;}
+
+	/* HEADINGS */
+	.post-title, .page-title, .page-title-post {font-size:1.75em;}
+	.widgettitle, .comments-title, .comment-reply-title, .no-comments {font-size:1.5em;}
+
+	/* IMAGES */
+	.wp-post-image, .single-image {width:50%; margin:0.3em 0.5em 0.3em 0;}
+
+	/* SIDEBAR */
+	#sidebar {width:100%; float:left; padding:0;}
+	.widget {padding:10px 3%; margin:0 0 10px;} 
+
+	/* FOOTER */
+	#footer {width:94%; padding:10px 3%;}
+	#footer .site-info {width:100%; float:left; padding:10px 0;}
+	#footer-widgets {width:100%; float:left; padding:0;}
+	.footer-right, .footer-middle, .footer-left {width:100%; margin:0; float:left;} 
+}
